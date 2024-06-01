@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 70%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cta button {
+    background-color: #f9c81d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.hero-buttons button {
+    background-color: #f9c81d;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 4096px;
+ 
+    margin-left: 450px;
+    margin-top: -400px;
+}
+
+.about, .highlights, .reservation, .contact {
+    padding: 50px 20px;
+}
+
+.about h2, .highlights h2, .reservation h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reservation form, .contact form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #f9c81d;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f9c81d;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content div {
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-text, .hero-image {
+        text-align: center;
+    }
+    
+    .hero-image img {
+        width: 100%;
+    }
+}
